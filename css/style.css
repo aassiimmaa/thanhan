@@ -527,6 +527,7 @@ html{
 .submit-btn:hover{
 	background-color: #ccc;
 	color: #000;
+	-webkit-appearance: none;
 }
 
 .map{

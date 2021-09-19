@@ -270,10 +270,13 @@
         <!-- Begin: Script responsive -->
       
         <script>
+
+            //Khởi tạo biến
             var header = document.getElementById('header')
             var MobileMenu = document.getElementById('js-mobile-menu')
             var HeaderHeight = header.clientHeight;
 
+            //Tự động đóng mở menu
             MobileMenu.onclick = function() {
                 var isClose = header.clientHeight === HeaderHeight;
                 if (isClose) {
@@ -283,6 +286,7 @@
                 }
             }
 
+            //Mở menu cấp 2 
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
             for (var i = 0; i < menuItems.length; i++){
                 var menuItem = menuItems[i];
